@@ -9,15 +9,11 @@ class Curriculo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Currículo"),),
-      body:Container(
-        margin: const EdgeInsets.only(left: 800),
-        
-        child: Row(
-          children: [
-
-            const SizedBox(height: 350,),
-
-            ClipRRect(
+      body:Center(
+          child: Column(
+            children: [
+              const SizedBox(height: 150,),
+              ClipRRect(
               borderRadius: BorderRadius.circular(190),
               child: Image.asset(
                 "assets/images/marcos.jpg",
@@ -26,12 +22,10 @@ class Curriculo extends StatelessWidget {
                 width: 150,
               )
             ),
-          ],
+            ],
+          ),
         ),
-          
-      ),
-
     );
-
   }
 }
+
