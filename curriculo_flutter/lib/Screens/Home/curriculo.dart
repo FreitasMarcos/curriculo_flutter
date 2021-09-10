@@ -73,16 +73,22 @@ class Curriculo extends StatelessWidget {
             endIndent: 10,
           ),
           const SizedBox(height: 10),
-          const Text(
-            "OBJETIVO: Em busca de um emprego, me coloco à disposição da empresa para aprimorar as habilidades da função e assim contribuir para os resultados da organização.",
-            style: TextStyle(fontSize: 18),
-            textAlign: TextAlign.left,
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              "OBJETIVO: Em busca de um emprego, me coloco à disposição da empresa para aprimorar as habilidades da função e assim contribuir para os resultados da organização.",
+              style: TextStyle(fontSize: 18),
+              textAlign: TextAlign.left,
+            ),
           ),
-          const SizedBox(height: 40,),
-          const Text(
-            "RESUMO DE QUALIFICAÇÕES",
-            style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25, decoration: TextDecoration.underline),
-            textAlign: TextAlign.left,
+          const SizedBox(height: 30,),
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              "RESUMO DE QUALIFICAÇÕES",
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+              textAlign: TextAlign.left,
+            ),
           ),
           const SizedBox(height: 15),
           const ListTile(
@@ -106,28 +112,39 @@ class Curriculo extends StatelessWidget {
             title: Text('Auxílio no desenvolvimento de três websites feitos em WordPress: www.soleluaimobiliaria.com.br, www.clickassistencia.come atualmente estou desenvolvimento minha loja que se chama godslipper.com.br.', style: TextStyle(fontSize: 18)),
           ),
           const SizedBox(height: 40,),
-          const Text(
-            "FORMAÇÃO ACADÊMICA",
-            style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25, decoration: TextDecoration.underline),
-            textAlign: TextAlign.left,
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              "FORMAÇÃO ACADÊMICA",
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+              textAlign: TextAlign.left,
+            ),
           ),
           const ListTile(
             leading:  MyBullet(),
             title: Text('Cursando o quarto período de Sistema de Informação na UNIPAM.', style: TextStyle(fontSize: 18)),
           ),
-          const Text(
-            "IDIOMA",
-            style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25, decoration: TextDecoration.underline),
-            textAlign: TextAlign.left,
+          const SizedBox(height: 40,),
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              "IDIOMA",
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+              textAlign: TextAlign.left,
+            ),
           ),
           const ListTile(
             leading:  MyBullet(),
             title: Text('Inglês – Básico', style: TextStyle(fontSize: 18)),
           ),
-          const Text(
-            "INFORMÁTICA",
-            style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25, decoration: TextDecoration.underline),
-            textAlign: TextAlign.left,
+          const SizedBox(height: 40,),
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              "INFORMÁTICA",
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+              textAlign: TextAlign.left,
+            ),
           ),
           const ListTile(
             leading:  MyBullet(),
@@ -141,18 +158,23 @@ class Curriculo extends StatelessWidget {
             leading:  MyBullet(),
             title: Text('Operador de Microcomputador Microsoft Office PowerPoint – Básico', style: TextStyle(fontSize: 18)),
           ),
-          const Text(
-            "CURSOS",
-            style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25, decoration: TextDecoration.underline),
-            textAlign: TextAlign.left,
+          const SizedBox(height: 40,),
+          const Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              "CURSOS",
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
+              textAlign: TextAlign.left,
+            ),
           ),
           const ListTile(
             leading:  MyBullet(),
             title: Text('12/2019 Aprendizagem Industrial de Processos Administrativos - SENAI, Jovem Aprendiz da TEBRA - Construção e Montagem LTDA. ', style: TextStyle(fontSize: 18)),
           ),
+          const SizedBox(height: 150,),
           const Center(
             child: Text(
-              "",
+              "Patrocínio 9 de Setembro 2021",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )
           ),
@@ -188,17 +210,4 @@ class MyBullet extends StatelessWidget{
   }
 }
 
-/* class Date extends StatelessWidget{
-
-  const Date({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-
-    DateTime now = DateTime.now();
-    return Text(
-      "Patrocínio " ${now.day}, "|" ${now.month}, "-" ${now.year},  
-    );
-  }
-} */
 
